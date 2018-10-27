@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Router, Route, Link ,Switch} from "react-router-dom";
+import { BrowserRouter, Router, Route, Link, Switch } from "react-router-dom";
 
 import classNames from "classnames";
 
@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/profile" render={() => <ProfilePage />} />
+          <Route exact path="/" render={() => <ProfilePage />} />
           <Route path="/post" render={() => <PostPage />} />
 
           <Route path="/message" render={() => <MessagePage />} />
