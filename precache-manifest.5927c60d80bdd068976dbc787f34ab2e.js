@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/trustvocate.task/static/js/runtime~main.f0785d90.js"
   },
   {
-    "revision": "66cf9d628b00f28e707a",
-    "url": "/trustvocate.task/static/js/main.66cf9d62.chunk.js"
+    "revision": "66aee9065cfc5a68bfd0",
+    "url": "/trustvocate.task/static/js/main.66aee906.chunk.js"
   },
   {
     "revision": "772b6f1fb32316994894",
     "url": "/trustvocate.task/static/js/1.772b6f1f.chunk.js"
   },
   {
-    "revision": "66cf9d628b00f28e707a",
+    "revision": "66aee9065cfc5a68bfd0",
     "url": "/trustvocate.task/static/css/main.5cdc5e34.chunk.css"
   },
   {
-    "revision": "d52602b94760124acfc205f5bbf50a48",
+    "revision": "db65d8e23098ad4a8c14058d8812c494",
     "url": "/trustvocate.task/index.html"
   }
 ];
