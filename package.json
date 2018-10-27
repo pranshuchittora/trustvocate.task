@@ -2,6 +2,7 @@
   "name": "trustvocate.task",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://pranshuchittora.github.io/trustvocate.task/",
   "dependencies": {
     "@babel/core": "7.1.0",
     "@material-ui/core": "^3.3.1",
@@ -28,6 +29,7 @@
     "eslint-plugin-react": "7.11.1",
     "file-loader": "2.0.0",
     "fs-extra": "7.0.0",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "identity-obj-proxy": "3.0.0",
     "jest": "23.6.0",
@@ -58,7 +60,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy":"yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
