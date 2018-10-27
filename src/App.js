@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Router, Route, Link } from "react-router-dom";
+import { BrowserRouter, Router, Route, Link ,Switch} from "react-router-dom";
 
 import classNames from "classnames";
 
@@ -22,7 +22,7 @@ const PostPage = () => (
 );
 const MessagePage = () => (
   <div>
-    <__MessagePage />{" "}
+    <__MessagePage />
   </div>
 );
 
@@ -30,12 +30,12 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <div>
+        <Switch>
           <Route exact path="/" render={() => <ProfilePage />} />
           <Route path="/post" render={() => <PostPage />} />
 
           <Route path="/message" render={() => <MessagePage />} />
-        </div>
+        </Switch>
       </BrowserRouter>
     );
   }
