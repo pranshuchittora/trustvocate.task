@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter, Router, Route, Link } from "react-router-dom";
 
 import classNames from "classnames";
 
@@ -29,14 +29,14 @@ const MessagePage = () => (
 class App extends Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
           <Route exact path="/" render={() => <ProfilePage />} />
           <Route path="/post" render={() => <PostPage />} />
 
           <Route path="/message" render={() => <MessagePage />} />
         </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
