@@ -2,12 +2,29 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import classNames from "classnames";
+
+// Custom Imports
 import "./App.css";
+import __ProfilePage from "./Pages/ProfilePage/ProfilePage";
+import __PostPage from "./Pages/PostPage/PostPage";
+import __MessagePage from "./Pages/MessagePage/MessagePage";
 
-const ProfilePage = () => <h1>Profile</h1>;
+const ProfilePage = () => (
+  <div>
+    <__ProfilePage />
+  </div>
+);
 
-const PostPage = () => <h1>Post</h1>;
-const MessagePage = () => <h1>Message</h1>;
+const PostPage = () => (
+  <div>
+    <__PostPage />
+  </div>
+);
+const MessagePage = () => (
+  <div>
+    <__MessagePage />{" "}
+  </div>
+);
 
 class App extends Component {
   render() {
