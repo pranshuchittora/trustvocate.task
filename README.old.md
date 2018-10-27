@@ -1,2 +1,0 @@
-# trustvocate.task
-Trustvocate Task 
