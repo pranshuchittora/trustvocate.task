@@ -31,10 +31,10 @@ class App extends Component {
     return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/home/profile" render={() => <ProfilePage />} />
-          <Route path="/home/post" render={() => <PostPage />} />
+          <Route exact path="/profile" render={() => <ProfilePage />} />
+          <Route path="/post" render={() => <PostPage />} />
 
-          <Route path="/home/message" render={() => <MessagePage />} />
+          <Route path="/message" render={() => <MessagePage />} />
         </Switch>
       </BrowserRouter>
     );
