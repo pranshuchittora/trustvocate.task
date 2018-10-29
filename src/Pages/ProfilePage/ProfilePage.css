@@ -1,0 +1,19 @@
+.CardCont {
+  margin-top: 20px;
+  background: rgb(245, 245, 245);
+  text-align: center;
+}
+.infoCont {
+  margin-top: 2em;
+  text-align: start;
+  width: auto;
+  display: inline-block;
+}
+.textInline {
+  display: inline;
+
+  padding: 2em;
+
+  font-family: sans-serif;
+  text-align: start;
+}

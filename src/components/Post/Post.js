@@ -7,14 +7,9 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
-import Collapse from "@material-ui/core/Collapse";
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import red from "@material-ui/core/colors/red";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import ShareIcon from "@material-ui/icons/Share";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import Button from "@material-ui/core/Button";
 const styles = {
@@ -32,9 +27,9 @@ const styles = {
   pos: {
     marginBottom: 12
   },
-  cardImg:{
-      width:"100%",
-  },
+  cardImg: {
+    width: "100%"
+  }
 };
 
 function SimpleCard(props) {
@@ -46,7 +41,7 @@ function SimpleCard(props) {
       <CardHeader
         avatar={
           <Avatar aria-label="Recipe" className={classes.avatar}>
-            RA
+            {props.userInitials}
           </Avatar>
         }
         action={
@@ -54,20 +49,27 @@ function SimpleCard(props) {
             <MoreVertIcon />
           </IconButton>
         }
-        title="How I become the CEO"
-        subheader="September 14, 2016"
+        title={props.title}
+        subheader={props.date}
       />
       <CardContent>
-        <img className={classes.cardImg}
-          src="https://picsum.photos/500/500?random"
+        <img
+          className={classes.cardImg}
+          src={props.imgSrc}
           alt=""
+          width="300px"
+          height="300px"
         />
+
         <Typography gutterBottom variant="h5" component="h2">
-          Lizard
+          {props.title}
         </Typography>
         <Typography component="p">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
+          doloribus harum. Ullam enim quod, suscipit unde sed perspiciatis vero
+          blanditiis debitis consequuntur vitae doloremque iure nesciunt
+          officiis numquam dignissimos voluptatem fuga ut ab soluta.
+          Necessitatibus reprehenderit hic explicabo sapiente ducimus!
         </Typography>
       </CardContent>
       <CardActions>
