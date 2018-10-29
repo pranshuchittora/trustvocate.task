@@ -1,6 +1,6 @@
 .CardCont {
-  margin-top: 20px;
-  background: rgb(245, 245, 245);
+  padding-top: 20px;
+  background: linear-gradient(135deg,rgb(255, 254, 202),rgb(255, 221, 208));
   text-align: center;
 }
 .infoCont {
@@ -8,6 +8,7 @@
   text-align: start;
   width: auto;
   display: inline-block;
+  padding-bottom: 50px;
 }
 .textInline {
   display: inline;
@@ -16,4 +17,8 @@
 
   font-family: sans-serif;
   text-align: start;
+}
+
+.postsCont{
+  padding-top: 100px;
 }
