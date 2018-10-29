@@ -57,8 +57,8 @@ function SimpleCard(props) {
           className={classes.cardImg}
           src={props.imgSrc}
           alt=""
-          width="300px"
-          height="300px"
+          style={{maxHeight:"300px"}}
+         
         />
 
         <Typography gutterBottom variant="h5" component="h2">
