@@ -12,36 +12,37 @@ class ProfilePage extends React.Component {
     InputA: "",
     messages: [
       {
-        senderId: "Me",
+        senderId: "Person A",
         text: "Me myself"
       },
       {
-        senderId: "OtherSIde",
+        senderId: "Person A",
         text: "XYZ?"
       }
     ]
   };
 
-  handleInputA = event => {
-    this.setState({ InputA: event.target.valuve });
+  handleInputA = e => {
+    this.setState({ InputA: e.target.value });
   };
-  // add = (message) => {
-  //   const newArr = this.state.messages.concat({
-  //     senderId: "Person A",
-  //     text: this.state.messages[this.state.messages.length -1 ].text
-  //   });
-  //   this.setState({messages:newArr})
-  // };
+  add = message => {
+    let newArr = this.state.messages.concat({
+      senderId: "Person A",
+      text: this.state.InputA
+    });
+
+    this.setState({messages:newArr})
+  };
   render() {
     return (
       <div>
         <__NavBar />
         <Typography variant="h1">Messages</Typography>
-        <__MessageList messages={this.state.messages} />
+        <__MessageList messages={this.state.messages}  />
         <TextField
           id="standard-dense"
           placeholder="Message - Person A"
-          onChange={this.handleInputA}
+          onInput={event => this.handleInputA(event)}
           margin="dense"
         />
         <Button onClick={this.add}>+</Button>
