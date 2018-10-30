@@ -73,7 +73,7 @@ function SimpleCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Read more</Button>
+        <Button size="small" variant="outlined" >Read more</Button>
       </CardActions>
     </Card>
   );
