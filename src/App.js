@@ -33,16 +33,16 @@ class App extends Component {
         <Switch>
           <Route
             exact
-            path={process.env.PUBLIC_URL + "/"}
+            path={'/'}
             render={() => <ProfilePage />}
           />
           <Route
-            path={process.env.PUBLIC_URL + "/post"}
+            path={'/post'}
             render={() => <PostPage />}
           />
 
           <Route
-            path={process.env.PUBLIC_URL + "/message"}
+            path={'/message'}
             render={() => <MessagePage />}
           />
         </Switch>
