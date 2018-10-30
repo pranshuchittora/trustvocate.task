@@ -1,0 +1,25 @@
+.messagesContRoot {
+   
+  min-height: 70vh;
+  background: rgb(243, 243, 243);
+}
+.inputContRoot {
+  display: flex;
+ 
+  bottom: 0;
+  width: 100%;
+}
+.inputCont {
+  padding-left: 10vw;
+  display: flex;
+  flex: 1;
+}
+.messageList {
+  width: 100vw;
+  white-space: nowrap;
+  height: 80vh;
+  overflow-y: scroll;
+}
+.sendBtn {
+  border-radius: 100%;
+}
