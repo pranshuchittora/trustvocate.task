@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/trustvocate.task/precache-manifest.4998220e575a4cbb0fc0234970a07b19.js"
+  "/trustvocate.task/precache-manifest.cfe0c3186d47a1935425b3596f45c63a.js"
 );
 
 workbox.clientsClaim();
