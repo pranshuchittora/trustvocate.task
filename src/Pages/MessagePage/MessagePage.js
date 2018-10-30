@@ -36,6 +36,7 @@ class ProfilePage extends React.Component {
     });
 
     this.setState({ messages: newArr });
+    document.getElementById('input-person-A').value=""
   };
 
   addB = () => {
@@ -45,6 +46,7 @@ class ProfilePage extends React.Component {
     });
 
     this.setState({ messages: newArr });
+    document.getElementById('input-person-B').value=""
   };
   render() {
     return (
@@ -70,10 +72,11 @@ class ProfilePage extends React.Component {
                   placeholder="Message - Person A"
                   onInput={event => this.handleInputA(event)}
                   margin="dense"
+                  style={{minWidth:"50%"}}
                 />
                 <Button
                   color="primary"
-                  variant="raised"
+                  variant="fab"
                   className={classNames(localStyles.sendBtn)}
                   onClick={this.addA}
                 >
@@ -86,10 +89,11 @@ class ProfilePage extends React.Component {
                   placeholder="Message - Person B"
                   onInput={event => this.handleInputB(event)}
                   margin="dense"
+                  style={{minWidth:"50%"}}
                 />
                 <Button
                   color="primary"
-                  variant="raised"
+                  variant="fab"
                   className={classNames(localStyles.sendBtn)}
                   onClick={this.addB}
                 >
