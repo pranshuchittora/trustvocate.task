@@ -57,8 +57,7 @@ function SimpleCard(props) {
           className={classes.cardImg}
           src={props.imgSrc}
           alt=""
-          style={{maxHeight:"300px"}}
-         
+          style={{ maxHeight: "300px" }}
         />
 
         <Typography gutterBottom variant="h5" component="h2">
@@ -73,7 +72,9 @@ function SimpleCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant="outlined" >Read more</Button>
+        <Button size="small" variant="outlined">
+          Read more
+        </Button>
       </CardActions>
     </Card>
   );

@@ -1,11 +1,10 @@
 .messagesContRoot {
-   
   min-height: 70vh;
   background: rgb(243, 243, 243);
 }
 .inputContRoot {
   display: flex;
- 
+
   bottom: 0;
   width: 100%;
 }

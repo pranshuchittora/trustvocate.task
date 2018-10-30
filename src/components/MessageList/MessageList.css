@@ -1,10 +1,10 @@
 .message {
- min-width: 50vw;
+  min-width: 50vw;
 }
 .right {
   position: relative;
   float: right;
- 
+
   background: rgb(199, 223, 255);
 }
 .left {
